@@ -2,7 +2,6 @@ package com.github.nvk.bayarlah.presenter
 
 import com.github.nvk.bayarlah.model.User
 import com.github.nvk.bayarlah.view.ILoginView
-import kotlin.math.log
 
 class LoginPresenter (internal var iLoginView: ILoginView): ILoginPresenter{
 

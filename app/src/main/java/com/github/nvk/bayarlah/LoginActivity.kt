@@ -1,12 +1,11 @@
 package com.github.nvk.bayarlah
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.github.nvk.bayarlah.presenter.LoginPresenter
 import com.github.nvk.bayarlah.view.ILoginView
 
@@ -14,7 +13,7 @@ class LoginActivity : AppCompatActivity(), ILoginView {
 
     internal lateinit var loginPresenter: LoginPresenter
 
-    private lateinit var btnLogin: Button
+   // private lateinit var btnLogin: Button
     private lateinit var etEmail: EditText
     private lateinit var etPass: EditText
 
@@ -26,8 +25,10 @@ class LoginActivity : AppCompatActivity(), ILoginView {
         loginPresenter = LoginPresenter(this)
 
         //event
+        val  btnLogin = findViewById<Button>(R.id.btnLogin)
         btnLogin.setOnClickListener {
-            loginPresenter.onLogin(etEmail.text.toString(), etPass.text.toString())
+            loginPresenter.onLogin(etEmail.text.toString(),
+                etPass.text.toString())
         }
 
     }
