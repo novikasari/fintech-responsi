@@ -7,4 +7,7 @@
     <string name="hPass">Password</string>
     <string name="hEmail">Email</string>
     <string name="bSend">Send email</string>
+    <string name="bReg">Register</string>
+    <string name="hConPas">Confirm Password</string>
+    <string name="dev">Created by novika</string>
 </resources>
