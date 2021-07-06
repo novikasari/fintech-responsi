@@ -3,7 +3,7 @@ package com.github.nvk.bayarlah.presenter
 import com.github.nvk.bayarlah.model.User
 import com.github.nvk.bayarlah.view.ILoginView
 
-class LoginPresenter (internal var iLoginView: ILoginView): ILoginPresenter{
+class LoginPresenter (private var iLoginView: ILoginView): ILoginPresenter{
 
     override fun onLogin(email: String, password: String) {
         val user = User(email, password)
