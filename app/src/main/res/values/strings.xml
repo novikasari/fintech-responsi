@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bayarlah</string>
+    <string name="tHavent">Have not account ? Register</string>
+    <string name="there">here</string>
+    <string name="tForget">"Forget password ? Click "</string>
+    <string name="bLogin">Login</string>
+    <string name="hPass">Password</string>
+    <string name="hEmail">Email</string>
+    <string name="bSend">Send email</string>
+</resources>
